@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+:root{
+    --yellow: #f7cb1d;
+    --dark-yellow: #eebf04;
+    --blue: #2c96ff;
+    --drak-blue: #1483f3;
+    --rose: #ff4e68;
+    --rose-hover: #f33f5a;
+}
+html{
+    font-size: 62.5%;
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border:none;
+    text-decoration: none;
+}
+.btn{
+    display: inline-block;
+    padding: 0.9rem 1rem;
+    border-radius: 0.5rem;
+    color: #fff;
+    background-color: var(--blue);
+    font-size: 2rem;
+    cursor: pointer;
+}
+.btn-index{
+    padding:.7rem 3rem;
+    color:#fff;
+    background:var(--yellow);
+    border-radius: 5rem;
+    margin-top: 1rem;
+}
+.btn-index:hover{
+    color: #fff;
+    background-color: var(--dark-yellow);
+}
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center; /*căn thẻ p ra giữa*/
+    justify-content: center; /*căn ra giữa màn*/
+    flex-flow: column; /*văn bản theo chiều dọc*/
+    background:url(../image/bg_index.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    
+}
+.home h1{
+    font-size: 6rem;
+    color:#555;
+}
+.home p{
+    font-size: 1.9rem;
+    color:#999;
+    padding:1rem 0;
+    width:70rem;
+}
