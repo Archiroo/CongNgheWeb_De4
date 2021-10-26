@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+:root{
+    --main-color: #027581;
+    --color-dark: #1D2231;
+    --text-gray: #8390A2;
+}
+html{
+    font-size: 62.5%;
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none; /*font chữ thường không có gì*/
+    list-style: none;
+    box-sizing: border-box; /*size từ border*/
+}
+
+/* SIDEBAR */
+#sidebar-toggle{
+    display: none;
+}
+.sidebar{ 
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    background: var(--main-color);
+    color: #fff;
+    padding: 10px;
+    overflow-y: auto; /*trục dọc*/
+    transition: width 500ms;
+}
+.sidebar-header{ 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    height: 60px;
+    padding: 0rem 1.6rem;
+}
+.sidebar-header .brand i{
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+.sidebar-menu{ /*8 Cái mục*/
+    padding: 2.2rem; /*vòng bao bên ngoài của cả 9 item*/
+}
+.sidebar li{
+    margin-bottom: 1.8rem; /*vòng bao bên ngoài của icon và chữ */
+}
+.sidebar a{
+    color: #fff;
+    font-size: 1.6rem;
+}
+.sidebar span:last-child{ /*Chữ easywrie*/
+    padding-left: rem;
+}
+#sidebar-toggle:checked ~ .sidebar{
+    width: 60px;
+}
