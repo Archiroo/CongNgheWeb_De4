@@ -49,6 +49,12 @@ html{
     color: #fff;
     background-color: var(--dark-yellow);
 }
+.btn-canel{
+    background-color: var(--rose);
+}
+.btn-canel:hover{
+    background-color: var(--rose-hover);
+}
 
 /* LOGIN FORM */
 .login-form-container{
@@ -58,10 +64,12 @@ html{
     background: rgba(255,255,255,0.8);
     position: fixed;
     top: 0;
-    right: -105%;
     z-index: 101;
     height: 100%;
     width: 100%;
+}
+.login{
+    right: -105%;
 }
 .login-form-container.active{
     right: 0;
@@ -107,7 +115,7 @@ html{
     color: var(--light-color);
     cursor: pointer;
 }
-.login-form-container form .btn{
+.login-form-container form .btn-sign-in{
     text-align: center;
     width: 100%;
     margin: 1.5rem 0;
@@ -118,7 +126,7 @@ html{
     font-size: 1.5rem;
 }
 .login-form-container form p a{
-    color: var(--green);
+    color: var(--yellow);
     text-decoration: underline;
 }
 .login-form-container  #close-login-btn{
@@ -129,8 +137,17 @@ html{
     color: var(--black);
     cursor: pointer;
 }
+/*SIGN UP FORM*/
+.login-form-container form .sign-up{
+    display: flex;
+    justify-content: space-between;
+}
+.login-form-container form .sign-up .btn-sign-up{
+    text-align: center;
+    width: 47%;
+    margin: 1.5rem 0;
+}
 
-/**/
 .home{
     min-height: 100vh;
     display: flex;

@@ -1,6 +1,5 @@
 <?php
-include('header-student.php');
-
+    include('header-student.php');
 ?>
 <!-- CSS cùng với sinh viên -->
     <div class="home">
@@ -10,9 +9,9 @@ include('header-student.php');
             <button class="btn btn-index">Get Started</button>
         </a>
     </div>
-    <div class="login-form-container">
+    <div class="login-form-container login">
         <div id="close-login-btn" class="fas fa-times"></div>
-        <form action="">
+        <form action="" method="POST">
             <h3>sign in</h3>
             <span>User name</span>
             <input type="email" name="" class="box" placeholder="Enter your email" id="">
@@ -22,11 +21,11 @@ include('header-student.php');
                 <input type="checkbox" name="" class="remember-me">
                 <label for="remember-me">Remember-me</label>
             </div>
-            <input type="submit" value="Sign in" class="btn">
+            <input type="submit" value="Sign in" class="btn btn-sign-in">
             <p>For get password ? <a href="#">Click Here</a></p>
-            <p>Don't have an account ? <a href="#">Create One</a></p>
+            <p>Don't have an account ? <a href="sign-up.php">Create One</a></p>
         </form>
     </div>
 <?php
-include('footer.php');
+    include('footer.php');
 ?>
