@@ -1,6 +1,6 @@
 <?php
-include('header-student.php');
-include('dashboard-student.php');
+include('header-teacher.php');
+include('dashboard-teacher.php');
 ?>
 <header>
     <form action="" class="search-from">
@@ -8,9 +8,9 @@ include('dashboard-student.php');
         <label for="search-box" class="fas fa-search"></label>
     </form>
     <div class="user-img">            
-        </div>
+    
     </div>
 </header>
 <?php
-include('footer.php');
+include('../student/footer.php');
 ?>
