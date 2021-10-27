@@ -237,11 +237,6 @@ html{
 #sidebar-toggle:checked ~ .main-content header{
     left: 6rem;  /*Phần thanh tìm kiếm*/
 }
-.main-content{
-    position: relative;
-    margin-left: 24rem; /*độ rộng thanh menu là 240px*/
-    transition: margin-left 500ms;
-}
 .sidebar .sidebar-menu ul li a span{
     font-size: 1.7rem;
 }
@@ -252,4 +247,55 @@ html{
     background-color: var(--main-color-hover);
     color: #fff;
     cursor: pointer;
+}
+.main-content{
+    position: relative;
+    margin-left: 24rem; /*độ rộng thanh menu là 240px*/
+    transition: margin-left 500ms;
+}
+/* Form index */
+.main-content header{
+    padding: 2rem 2rem 0 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-content header span{
+    font-size: 2rem;
+}
+.social-icons{
+    display: flex;
+}
+.social-icons span{
+    padding: 1rem;
+    margin-right: 3rem;
+}
+.search-wrapper i{
+    font-size: 1.5rem;
+}
+.search-wrapper input {
+    border-style: groove;
+    border-radius: 0.5rem;
+    width: 30rem;
+}
+.social-icons .img-user {
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-image: url(../image/user.png);
+}
+.main-content main {
+    border-top-style:ridge;
+    background-color: #ebebeb;
+}
+.dash-card{
+    display: grid; /*hiển thị dạng lưới*/
+    grid-template-columns: repeat(4, 1fr); /*chia làm 4 và đều bằng 1 fr*/
+    grid-column-gap: 3rem;
+}
+.card-single{
+    background: #fff;
+    border-radius: 10px;
+    margin: 2rem;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2); /*đổ bóng*/
 }
