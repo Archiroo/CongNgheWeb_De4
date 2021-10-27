@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 :root{
-    --yellow: #f8d02d;
-    --dark-yellow: #eebf04;
     --blue: #468acf;
     --drak-blue: #1c78d4;
     --rose: #ff4e68;
@@ -14,6 +12,9 @@
     --main-color-hover: #1a7f8a;
     --color-dark: #1D2231;
     --text-gray: #8390A2;
+    --border: 0.1rem solid rgba(0,0,0,0.1);
+    --border-hover: 0.1rem solid var(--black);
+    --box-shadow:0 0.5rem 1rem rgba(0,0,0,0.1);
 }
 html{
     font-size: 62.5%;
@@ -215,10 +216,10 @@ html{
     color: #fff;
     font-size: 1.5rem;
 }
-.sidebar span:last-child{ /*Chữ easywrie*/
+.sidebar span:last-child{
     padding-left: 1rem;
 }
-/*51 đến 57 là kéo ra kéo vào*/
+/* Kéo ra kéo vào */
 #sidebar-toggle:checked ~ .sidebar{
     width: 6rem;
 }
@@ -252,4 +253,58 @@ html{
     background-color: var(--main-color-hover);
     color: #fff;
     cursor: pointer;
+}
+
+
+/* PHẦN HEADER */
+header{
+    margin-left: 24rem;
+    display: flex;
+    justify-content: space-between;
+}
+header .search-from{
+    width: 40rem;
+    height: 4rem;
+    border: var(--border);
+    overflow: hidden;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+    margin: 1rem 0 0 25rem;
+}
+header .search-from input{
+    font-size: 1.6rem;
+    padding: 0 1.2rem;
+    height: 100%;
+    width: 100%;
+    text-transform: none;
+    color: var(--black);
+}
+header .search-from label{
+    font-size: 2rem;
+    padding-right: 1.5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+header .search-from label:hover{
+    color: var(--main-color);
+}
+header .user-img{
+    height: 40px;
+    width: 40px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../image/user_1.jpg);
+    border-radius: 50%;
+    margin: 1rem 2rem 0 0;
+}
+header .user-img:hover{
+    cursor: pointer;
+}
+/* Phần main */
+.main-content{
+    position: relative;
+    margin-left: 240px;
+    /* transition: margin-left 500ms; */
 }
