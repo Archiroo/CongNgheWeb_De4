@@ -1,62 +1,71 @@
 <?php
-    include('header-teacher.php');
+include('header-teacher.php');
 ?>
-<input type="checkbox" id = "sidebar-toggle">
+<input type="checkbox" id="sidebar-toggle">
 <div class="sidebar">
     <div class="sidebar-header">
-        <h3 class="brand">
-            <i class="fas fa-user-graduate"></i>
+        <h3 class="brand">        
+            <span class="fas fa-user-graduate"></span>
             <span>Education</span>
         </h3>
-        <i class="fas fa-bars"></i>
+        <label for="sidebar-toggle" class="ti-menu-alt"></label>
+        <!--nút 3 ghạch-->
     </div>
     <div class="sidebar-menu">
         <ul>
             <li>
                 <a href="">
-                    <i class="fas fa-home"></i>
+                    <span class="ti-home"></span>
                     <span>Home</span>
                 </a>
             </li>
             <li>
                 <a href="">
-                    <i class="far fa-address-book"></i>
+                    <span class="fas fa-scroll"></span>
                     <span>Subject</span>
                 </a>
             </li>
             <li>
                 <a href="">
-                    <i class="fas fa-book"></i>
+                    <span class="ti-clipboard"></span>
                     <span>Homework</span>
                 </a>
             </li>
             <li>
                 <a href="">
-                    <i class="fas fa-user-friends"></i>
+                    <span class="far fa-user"></span>
                     <span>Team</span>
                 </a>
             </li>
             <li>
                 <a href="">
-                    <i class="fas fa-folder"></i>
-                    <span>Project</span>
+                    <span class="ti-folder"></span>
+                    <span>Projects</span>
                 </a>
             </li>
             <li>
                 <a href="">
-                    <i class="far fa-comments"></i>
+                    <span class="far fa-comments"></span>
                     <span>Contact</span>
                 </a>
             </li>
             <li>
                 <a href="">
-                    <i class="fas fa-cog"></i>
-                    <span>Account</span>
+                    <span class="ti-settings"></span>
+                    <span>Acount</span>
                 </a>
             </li>
         </ul>
     </div>
 </div>
+<div class="main-content">
+    <header>
+        
+    </header>
+    <main>
+        
+    </main>
+</div>
 <?php
-    include('../sinhvien/footer.php')
+include('../student/footer.php');
 ?>

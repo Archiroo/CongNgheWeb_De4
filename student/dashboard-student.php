@@ -1,5 +1,5 @@
 <?php
-include('./header-student.php');
+include('header-student.php');
 ?>
 <div class="d-flex flex-wrap">
     <input type="checkbox" id="list">
@@ -73,5 +73,5 @@ include('./header-student.php');
         </div>
     </div>
     <?php
-    include('./footer.php');
+    include('footer.php');
     ?>
