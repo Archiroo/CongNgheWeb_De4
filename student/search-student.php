@@ -1,5 +1,6 @@
 <?php
-include('header-teacher.php');
+include('header-student.php');
+include('dashboard-student.php');
 ?>
 <div class="main-content">
     <header>

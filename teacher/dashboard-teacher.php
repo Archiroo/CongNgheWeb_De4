@@ -66,6 +66,3 @@ include('header-teacher.php');
         
     </main>
 </div>
-<?php
-include('../student/footer.php');
-?>

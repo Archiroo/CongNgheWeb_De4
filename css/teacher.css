@@ -49,7 +49,7 @@ html{
     overflow-y: auto; /*trục dọc*/
     transition: width 500ms;
 }
-.sidebar-header{ /*Cái liên kết và Easywire và cái dấu 3 ghạch*/
+.sidebar-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -70,12 +70,12 @@ html{
     color: #fff;
     font-size: 1.5rem;
 }
-.sidebar span:last-child{ /*Chữ easywrie*/
+.sidebar span:last-child{
     padding-left: 1rem;
 }
 /*51 đến 57 là kéo ra kéo vào*/
 #sidebar-toggle:checked ~ .sidebar{
-    width: 6rem;
+    width: 60px;
 }
 #sidebar-toggle:checked ~ .sidebar .sidebar-header h3 span,
 #sidebar-toggle:checked ~ .sidebar li span:last-child {
@@ -87,15 +87,13 @@ html{
     justify-content: center;
 }
 #sidebar-toggle:checked ~ .main-content{ 
-    margin-left: 6rem; /*phần main kéo theo*/
+    margin-left: 60px; /*phần main kéo theo*/
+}
+#sidebar-toggle:checked ~ .main-content header{
+    left: 60px;  /*Phần thanh tìm kiếm*/
 }
 #sidebar-toggle:checked ~ .main-content header{
     left: 6rem;  /*Phần thanh tìm kiếm*/
-}
-.main-content{
-    position: relative;
-    margin-left: 24rem; /*độ rộng thanh menu là 240px*/
-    transition: margin-left 500ms;
 }
 .sidebar .sidebar-menu ul li a span{
     font-size: 1.7rem;
@@ -109,49 +107,51 @@ html{
     cursor: pointer;
 }
 
-/* PHẦN HEADER */
-header{
-    margin-left: 24rem;
-    display: flex;
-    justify-content: space-between;
+/* Phần HEADER */
+.main-content{
+    position: relative;
+    margin-left: 240px; /*độ rộng thanh menu là 240px*/
+    transition: margin-left 500ms;
 }
-header .search-from{
-    width: 40rem;
-    height: 4rem;
-    border: var(--border);
-    overflow: hidden;
+header{ /*kính tìm kiếm, textbox,chuông, tin nhắn*/
+    position: fixed;
+    top: 0;
+    left: 24rem; /*độ rộng của menu*/
+    z-index: 100;
+    width: calc(100% - 24rem);
     background: #fff;
+    padding: 0rem 2rem;
+    height: 6rem; /*chiều cao item là 60px*/
     display: flex;
     align-items: center;
-    border-radius: 1rem;
-    margin: 1rem 0 0 25rem;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    transition: left 500ms;
 }
-header .search-from input{
-    font-size: 1.6rem;
-    padding: 0 1.2rem;
-    height: 100%;
-    width: 100%;
-    text-transform: none;
-    color: var(--black);
+.search-wrapper{
+    display: flex;
+    align-items: center;
 }
-header .search-from label{
-    font-size: 2rem;
-    padding-right: 1.5rem;
-    color: var(--black);
-    cursor: pointer;
+.search-wrapper span{
+    font-size: 1.7rem;
 }
-header .search-from label:hover{
-    color: var(--main-color);
+.search-wrapper input{
+    padding: 1rem;
+    font-size: 1.8rem;
+    width: 70rem;
 }
-header .user-img{
-    height: 40px;
-    width: 40px;
+.social-icons div{
+    height: 4rem;
+    width: 4rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../image/user_1.jpg);
     border-radius: 50%;
-    margin: 1rem 2rem 0 0;
 }
-header .user-img:hover{
-    cursor: pointer;
-}
+
+
+
+
+
+
+

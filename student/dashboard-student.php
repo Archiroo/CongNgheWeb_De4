@@ -41,6 +41,3 @@ include('header-student.php');
     </div>
 </div>
     
-<?php
-include('footer.php');
-?>

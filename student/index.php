@@ -1,0 +1,9 @@
+<?php
+    include('header-student.php');
+    include('dashboard-student.php');
+    include('search-student.php');
+?>
+</div>
+<?php
+    include('../student/footer.php');
+?>
