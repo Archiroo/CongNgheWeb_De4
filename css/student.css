@@ -10,6 +10,10 @@
     --border: 0.1rem solid rgba(0,0,0,0.1);
     --border-hover: 0.1rem solid var(--black);
     --box-shadow:0 0.5rem 1rem rgba(0,0,0,0.1);
+    --main-color: #027581;
+    --main-color-hover: #1a7f8a;
+    --color-dark: #1D2231;
+    --text-gray: #8390A2;
 }
 html{
     font-size: 62.5%;
@@ -30,24 +34,23 @@ html{
     padding: 0.9rem 1rem;
     border-radius: 0.5rem;
     color: #fff;
-    background-color: var(--yellow);
+    background-color: var(--main-color);
     font-size: 2rem;
     cursor: pointer;
 }
 .btn:hover{
-    background-color: var(--dark-yellow);
+    background-color: var(--main-color-hover);
     color: #fff;
 }
 .btn-index{
     padding:.7rem 3rem;
     color:#fff;
-    background:var(--yellow);
     border-radius: 5rem;
     margin-top: 1rem;
 }
 .btn-index:hover{
     color: #fff;
-    background-color: var(--dark-yellow);
+    background-color: var(--main-color-hover);
 }
 .btn-canel{
     background-color: var(--rose);
@@ -126,7 +129,7 @@ html{
     font-size: 1.5rem;
 }
 .login-form-container form p a{
-    color: var(--yellow);
+    color: var(--main-color);
     text-decoration: underline;
 }
 .login-form-container  #close-login-btn{
