@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 :root{
-    --yellow: #f8d02d;
-    --dark-yellow: #eebf04;
     --blue: #468acf;
     --drak-blue: #1c78d4;
     --rose: #ff4e68;
@@ -14,14 +12,21 @@
     --main-color-hover: #1a7f8a;
     --color-dark: #1D2231;
     --text-gray: #8390A2;
+    --border: 0.1rem solid rgba(0,0,0,0.1);
+    --border-hover: 0.1rem solid var(--black);
+    --box-shadow:0 0.5rem 1rem rgba(0,0,0,0.1);
 }
 *{
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    text-decoration: none !important; /*font chữ thường không có gì*/
+    box-sizing: border-box;
+    outline: none;
+    border:none;
+    text-decoration: none;
+    transition: all .3s linear;
+    transition: width none;
     list-style: none;
-    box-sizing: border-box; /*size từ border*/
 }
 html{
     font-size: 62.5%;
@@ -44,7 +49,7 @@ html{
     overflow-y: auto; /*trục dọc*/
     transition: width 500ms;
 }
-.sidebar-header{ /*Cái liên kết và Easywire và cái dấu 3 ghạch*/
+.sidebar-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -65,12 +70,12 @@ html{
     color: #fff;
     font-size: 1.5rem;
 }
-.sidebar span:last-child{ /*Chữ easywrie*/
+.sidebar span:last-child{
     padding-left: 1rem;
 }
 /*51 đến 57 là kéo ra kéo vào*/
 #sidebar-toggle:checked ~ .sidebar{
-    width: 6rem;
+    width: 60px;
 }
 #sidebar-toggle:checked ~ .sidebar .sidebar-header h3 span,
 #sidebar-toggle:checked ~ .sidebar li span:last-child {
@@ -82,15 +87,13 @@ html{
     justify-content: center;
 }
 #sidebar-toggle:checked ~ .main-content{ 
-    margin-left: 6rem; /*phần main kéo theo*/
+    margin-left: 60px; /*phần main kéo theo*/
+}
+#sidebar-toggle:checked ~ .main-content header{
+    left: 60px;  /*Phần thanh tìm kiếm*/
 }
 #sidebar-toggle:checked ~ .main-content header{
     left: 6rem;  /*Phần thanh tìm kiếm*/
-}
-.main-content{
-    position: relative;
-    margin-left: 24rem; /*độ rộng thanh menu là 240px*/
-    transition: margin-left 500ms;
 }
 .sidebar .sidebar-menu ul li a span{
     font-size: 1.7rem;
@@ -104,9 +107,47 @@ html{
     cursor: pointer;
 }
 
-
-
-
+/* Phần HEADER */
+.main-content{
+    position: relative;
+    margin-left: 240px; /*độ rộng thanh menu là 240px*/
+    transition: margin-left 500ms;
+}
+header{ /*kính tìm kiếm, textbox,chuông, tin nhắn*/
+    position: fixed;
+    top: 0;
+    left: 24rem; /*độ rộng của menu*/
+    z-index: 100;
+    width: calc(100% - 24rem);
+    background: #fff;
+    padding: 0rem 2rem;
+    height: 6rem; /*chiều cao item là 60px*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    transition: left 500ms;
+}
+.search-wrapper{
+    display: flex;
+    align-items: center;
+}
+.search-wrapper span{
+    font-size: 1.7rem;
+}
+.search-wrapper input{
+    padding: 1rem;
+    font-size: 1.8rem;
+    width: 70rem;
+}
+.social-icons div{
+    height: 4rem;
+    width: 4rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../image/user_1.jpg);
+    border-radius: 50%;
+}
 
 
 

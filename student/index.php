@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 include('dashboard-student.php')
 ?>
 <div class="main-content">
@@ -67,3 +68,13 @@ include('dashboard-student.php')
         </div>
     </main>
 </div>
+=======
+    include('header-student.php');
+    include('dashboard-student.php');
+    include('search-student.php');
+?>
+</div>
+<?php
+    include('../student/footer.php');
+?>
+>>>>>>> 4af36cc814aa7f484293633fe17d5e9fcf67fd5a

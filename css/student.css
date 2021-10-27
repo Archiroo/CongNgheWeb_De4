@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 :root{
-    --yellow: #f8d02d;
-    --dark-yellow: #eebf04;
     --blue: #468acf;
     --drak-blue: #1c78d4;
     --rose: #ff4e68;
@@ -14,6 +12,9 @@
     --main-color-hover: #1a7f8a;
     --color-dark: #1D2231;
     --text-gray: #8390A2;
+    --border: 0.1rem solid rgba(0,0,0,0.1);
+    --border-hover: 0.1rem solid var(--black);
+    --box-shadow:0 0.5rem 1rem rgba(0,0,0,0.1);
 }
 html{
     font-size: 62.5%;
@@ -215,27 +216,8 @@ html{
     color: #fff;
     font-size: 1.5rem;
 }
-.sidebar span:last-child{ /*Chữ easywrie*/
+.sidebar span:last-child{
     padding-left: 1rem;
-}
-/*51 đến 57 là kéo ra kéo vào*/
-#sidebar-toggle:checked ~ .sidebar{
-    width: 6rem;
-}
-#sidebar-toggle:checked ~ .sidebar .sidebar-header h3 span,
-#sidebar-toggle:checked ~ .sidebar li span:last-child {
-    display: none;
-}
-#sidebar-toggle:checked ~ .sidebar .sidebar-header,
-#sidebar-toggle:checked ~ .sidebar li {
-    display: flex;
-    justify-content: center;
-}
-#sidebar-toggle:checked ~ .main-content{ 
-    margin-left: 6rem; /*phần main kéo theo*/
-}
-#sidebar-toggle:checked ~ .main-content header{
-    left: 6rem;  /*Phần thanh tìm kiếm*/
 }
 .sidebar .sidebar-menu ul li a span{
     font-size: 1.7rem;
@@ -248,6 +230,65 @@ html{
     color: #fff;
     cursor: pointer;
 }
+
+/*Kéo ra kéo vào*/
+#sidebar-toggle:checked ~ .sidebar{
+    width: 60px;
+}
+#sidebar-toggle:checked ~ .sidebar .sidebar-header h3 span,
+#sidebar-toggle:checked ~ .sidebar li span:last-child {
+    display: none;
+}
+#sidebar-toggle:checked ~ .sidebar .sidebar-header,
+#sidebar-toggle:checked ~ .sidebar li {
+    display: flex;
+    justify-content: center;
+}
+#sidebar-toggle:checked ~ .main-content{ 
+    margin-left: 60px; /*phần main kéo theo*/
+}
+#sidebar-toggle:checked ~ .main-content header{
+    left: 60px;  /*Phần thanh tìm kiếm*/
+}
+#sidebar-toggle:checked ~ .main-content header{
+    left: 6rem;  /*Phần thanh tìm kiếm*/
+}
+<<<<<<< HEAD
+.sidebar .sidebar-menu ul li a span{
+    font-size: 1.7rem;
+=======
+
+
+/* Phần HEADER */
+.main-content{
+    position: relative;
+    margin-left: 240px; /*độ rộng thanh menu là 240px*/
+    transition: margin-left 500ms;
+}
+header{ /*kính tìm kiếm, textbox,chuông, tin nhắn*/
+    position: fixed;
+    top: 0;
+    left: 24rem; /*độ rộng của menu*/
+    z-index: 100;
+    width: calc(100% - 24rem);
+    background: #fff;
+    padding: 0rem 2rem;
+    height: 6rem; /*chiều cao item là 60px*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    transition: left 500ms;
+>>>>>>> 4af36cc814aa7f484293633fe17d5e9fcf67fd5a
+}
+.search-wrapper{
+    display: flex;
+    align-items: center;
+}
+.search-wrapper span{
+    font-size: 1.7rem;
+}
+<<<<<<< HEAD
 .main-content{
     position: relative;
     margin-left: 24rem; /*độ rộng thanh menu là 240px*/
@@ -298,4 +339,18 @@ html{
     border-radius: 10px;
     margin: 2rem;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2); /*đổ bóng*/
+=======
+.search-wrapper input{
+    padding: 1rem;
+    font-size: 1.8rem;
+    width: 70rem;
+}
+.social-icons div{
+    height: 4rem;
+    width: 4rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../image/user_1.jpg);
+    border-radius: 50%;
+>>>>>>> 4af36cc814aa7f484293633fe17d5e9fcf67fd5a
 }

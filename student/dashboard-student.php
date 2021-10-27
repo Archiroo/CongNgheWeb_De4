@@ -40,6 +40,4 @@ include('header-student.php');
         </ul>
     </div>
 </div>
-<?php
-include('footer.php');
-?>
+    
