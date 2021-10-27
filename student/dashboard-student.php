@@ -1,77 +1,45 @@
 <?php
 include('header-student.php');
 ?>
-<div class="d-flex flex-wrap">
-    <input type="checkbox" id="list">
-    <div class="menu">
-        <div class="menu-header">
-            <h3 class="brand">
-                <span class="fas fa-link"></span>
-                <span>Education</span>
-            </h3>
-            <label for="list"><i class="fas fa-bars"></i></label>
-        </div>
-        <div class="menu-main">
-            <ul>
-                <li>
-                    <a href="./index.php">
-                        <span class="fas fa-home"></span>
-                        <span>Home</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <span class="fas fa-book"></span>
-                        <span>Homework</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <span class="fas fa-file-invoice"></span>
-                        <span>Projects</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <span class="fas fa-table"></span>
-                        <span>Transcript</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <span class="fas fa-users"></span>
-                        <span>Imformation</span>
-                    </a>
-                </li>
-
-            </ul>
-        </div>
+<input type="checkbox" id="sidebar-toggle">
+<div class="sidebar">
+    <div class="sidebar-header">
+        <h3 class="brand">
+            <span class="fas fa-user-graduate"></span>
+            <span>Education</span>
+        </h3>
+        <label for="sidebar-toggle" class="ti-menu-alt"></label>
+        <!--nút 3 ghạch-->
     </div>
-    <div class="main-content container">
-        <div class="header row">
-            <div class="col-6 box1 d-flex flex-wrap">
-                <i class="fas fa-search icon-search"></i>
-                <input class="form-control me-2 search" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success button-search" type="submit">Search</button>
-            </div>
-            <div class="col-6 box2">
-                <span><i class="fas fa-bell"></i></span>
-                <span><i class="fas fa-comment"></i></span>
-                <span><a href=""><img src="../image/user.jpg" class="user-imge" alt=""></a></span>
-            </div>
-        </div>
-        <div class="main">
-            <div class="subject">
-                <div class="CN-Web">
-                    <a href="" class="subject-click">
-                        <img src="../image/cnweb.jpg" alt="">
-                        <h4>TLU-CSE</h4>
-                        <h4>Công Nghệ Web(Backend)</h4>
-                    </a>
-                </div>
-            </div>
-        </div>
+    <div class="sidebar-menu">
+        <ul>
+            <li>
+                <a href="">
+                    <span class="ti-home"></span>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span class="fas fa-scroll"></span>
+                    <span>Subject</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span class="far fa-comments"></span>
+                    <span>Contact</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span class="ti-settings"></span>
+                    <span>Acount</span>
+                </a>
+            </li>
+        </ul>
     </div>
-    <?php
-    include('footer.php');
-    ?>
+</div>
+<?php
+include('footer.php');
+?>
