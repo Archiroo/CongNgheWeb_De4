@@ -1,5 +1,5 @@
 <?php
-include('header-teacher.php');
+include('dashboard-teacher.php');
 ?>
 <div class="main-content">
     <header>

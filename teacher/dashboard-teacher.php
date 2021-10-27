@@ -58,11 +58,4 @@ include('header-teacher.php');
         </ul>
     </div>
 </div>
-<div class="main-content">
-    <header>
-        
-    </header>
-    <main>
-        
-    </main>
-</div>
+
