@@ -253,6 +253,10 @@ html{
 #sidebar-toggle:checked ~ .main-content header{
     left: 6rem;  /*Phần thanh tìm kiếm*/
 }
+<<<<<<< HEAD
+.sidebar .sidebar-menu ul li a span{
+    font-size: 1.7rem;
+=======
 
 
 /* Phần HEADER */
@@ -275,6 +279,7 @@ header{ /*kính tìm kiếm, textbox,chuông, tin nhắn*/
     justify-content: space-between;
     border-bottom: 1px solid #ccc;
     transition: left 500ms;
+>>>>>>> 4af36cc814aa7f484293633fe17d5e9fcf67fd5a
 }
 .search-wrapper{
     display: flex;
@@ -283,6 +288,58 @@ header{ /*kính tìm kiếm, textbox,chuông, tin nhắn*/
 .search-wrapper span{
     font-size: 1.7rem;
 }
+<<<<<<< HEAD
+.main-content{
+    position: relative;
+    margin-left: 24rem; /*độ rộng thanh menu là 240px*/
+    transition: margin-left 500ms;
+}
+/* Form index */
+.main-content header{
+    padding: 2rem 2rem 0 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-content header span{
+    font-size: 2rem;
+}
+.social-icons{
+    display: flex;
+}
+.social-icons span{
+    padding: 1rem;
+    margin-right: 3rem;
+}
+.search-wrapper i{
+    font-size: 1.5rem;
+}
+.search-wrapper input {
+    border-style: groove;
+    border-radius: 0.5rem;
+    width: 30rem;
+}
+.social-icons .img-user {
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-image: url(../image/user.png);
+}
+.main-content main {
+    border-top-style:ridge;
+    background-color: #ebebeb;
+}
+.dash-card{
+    display: grid; /*hiển thị dạng lưới*/
+    grid-template-columns: repeat(4, 1fr); /*chia làm 4 và đều bằng 1 fr*/
+    grid-column-gap: 3rem;
+}
+.card-single{
+    background: #fff;
+    border-radius: 10px;
+    margin: 2rem;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2); /*đổ bóng*/
+=======
 .search-wrapper input{
     padding: 1rem;
     font-size: 1.8rem;
@@ -295,4 +352,5 @@ header{ /*kính tìm kiếm, textbox,chuông, tin nhắn*/
     background-repeat: no-repeat;
     background-image: url(../image/user_1.jpg);
     border-radius: 50%;
+>>>>>>> 4af36cc814aa7f484293633fe17d5e9fcf67fd5a
 }
