@@ -74,26 +74,28 @@ html{
     padding-left: 1rem;
 }
 /*51 đến 57 là kéo ra kéo vào*/
-#sidebar-toggle:checked ~ .sidebar{
+#sidebar-toggle:checked ~ .sidebar {
     width: 60px;
 }
+
 #sidebar-toggle:checked ~ .sidebar .sidebar-header h3 span,
 #sidebar-toggle:checked ~ .sidebar li span:last-child {
     display: none;
 }
+
 #sidebar-toggle:checked ~ .sidebar .sidebar-header,
 #sidebar-toggle:checked ~ .sidebar li {
     display: flex;
     justify-content: center;
 }
-#sidebar-toggle:checked ~ .main-content{ 
-    margin-left: 60px; /*phần main kéo theo*/
+
+#sidebar-toggle:checked ~ .main-content {
+    margin-left: 60px;
 }
-#sidebar-toggle:checked ~ .main-content header{
-    left: 60px;  /*Phần thanh tìm kiếm*/
-}
-#sidebar-toggle:checked ~ .main-content header{
-    left: 6rem;  /*Phần thanh tìm kiếm*/
+
+#sidebar-toggle:checked ~ .main-content header {
+    left: 60px;
+    width: calc(100% - 60px);
 }
 .sidebar .sidebar-menu ul li a span{
     font-size: 1.7rem;
@@ -313,74 +315,89 @@ tbody tr:nth-child(even){
 .table-responsive{
     overflow-x: auto;
 }
-@media only screen and (max-width: 1200px){
-    .sidebar{
+
+@media only screen and (max-width: 1200px) {
+    .sidebar {
         width: 60px;
         z-index: 150;
     }
+
     .sidebar .sidebar-header h3 span,
     .sidebar li span:last-child {
         display: none;
     }
+
     .sidebar .sidebar-header,
     .sidebar li {
         display: flex;
         justify-content: center;
     }
-    .main-content{ 
-        margin-left: 60px; /*phần main kéo theo*/
+
+    .main-content {
+        margin-left: 60px;
     }
-    .main-content header{
-       left: 60px;  /*Phần thanh tìm kiếm*/
-       width: calc(100% - 60px);
-   }
-   #sidebar-toggle:checked ~ .sidebar{
-       width: 240px;
-   }
-   #sidebar-toggle:checked ~ .sidebar .sidebar-header h3 span,
-   #sidebar-toggle:checked ~ .sidebar li span:last-child {
-       display: inline;
-   }
-   #sidebar-toggle:checked ~ .sidebar .sidebar-header {
-       display: flex;
-       justify-content: space-between;
-   }
-   #sidebar-toggle:checked ~ .sidebar li {
-       display: block;
-   }
-   #sidebar-toggle:checked ~ .main-content{ 
-       margin-left: 60px; /*phần main kéo theo*/
-   }
-   #sidebar-toggle:checked ~ .main-content header{
-       left: 60px;  /*Phần thanh tìm kiếm*/
-   }
+
+    .main-content header {
+        left: 60px;
+        width: calc(100% - 60px);
+    }
+    
+    #sidebar-toggle:checked ~ .sidebar {
+        width: 240px;
+    }
+
+    #sidebar-toggle:checked ~ .sidebar .sidebar-header h3 span,
+    #sidebar-toggle:checked ~ .sidebar li span:last-child {
+        display: inline;
+    }
+
+    #sidebar-toggle:checked ~ .sidebar .sidebar-header {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #sidebar-toggle:checked ~ .sidebar li {
+        display: block;
+    }
+
+    #sidebar-toggle:checked ~ .main-content {
+        margin-left: 60px;
+    }
+
+    #sidebar-toggle:checked ~ .main-content header {
+        left: 60px;
+    }
 }
-@media only screen and (max-width: 860px){
-   .dash-cards{
-       grid-template-columns: repeat(2,1fr);
-   }
-   .card-single{
-       margin-bottom: 1rem;
-   }
-   .activity-grid{
-       display: block;
-   }
-   .summary{
-       margin-top: 1.5rem;
-   }
-   }
+
+@media only screen and (max-width: 860px) {
+    .dash-cards {
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+    .card-single {
+        margin-bottom: 1rem;
+    }
+    
+    .activity-grid {
+        display: block;
+    }
+    
+    .summary {
+        margin-top: 1.5rem;
+    }
+}
+
 @media only screen and (max-width: 600px) {
-   .dash-cards{
-       grid-template-columns: 100%;
-   }
-}
-@media only screen and (max-width: 450px){
-   main{
-       padding-left: 1rem;
-       padding-right: 1rem;
-   }
+    .dash-cards {
+        grid-template-columns: 100%;
+    }
 }
 
-
+@media only screen and (max-width: 450px) {
+    main {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
 
 
